@@ -5,16 +5,20 @@ $(document).ready(function() {
   var colorInput = $("input#color1").val();
   var foodInput = $("input#food1").val();
   var movieInput = $("input#movie1").val();
-  //var messageBox  = document.getElementById("display");
-
   var myArray = [color, food, movie];
-  myArray.push($("#drink1").val());
-  
-  console.log(myArray);
+ 
+  $(".color1").text(colorInput);
+  $(".food1").text(foodInput);
+  $(".movie1").text(movieInput);
+
 
   $("#display").show();
-  // $("#display").text(myArray);
+  
 
   event.preventDefault();
   });
 });
+// console.log(myArray);
+
+
+// myArray.push($("#drink1").val());
